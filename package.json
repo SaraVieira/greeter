@@ -2,10 +2,10 @@
   "name": "greeter",
   "version": "1.0.0",
   "description": "A simple greeter module",
-  "main": "src/index.js",
+  "main": "src/greeter.js",
   "scripts": {
     "build": "neutrino build --presets neutrino-preset-web",
-    "lint": "eslint src/*.js"
+    "test": "eslint src/*.js && mocha"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/SaraVieira/greeter#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.16.1",
+    "mocha": "^3.2.0",
     "neutrino": "^4.2.0",
     "neutrino-preset-web": "^4.2.1"
   }

@@ -1,7 +1,7 @@
 {
   "name": "greeter",
   "description": "A simple greeter module",
-  "main": "src/index.js",
+  "main": "src/greeter.js",
   "authors": [
     "Sara Vieira"
   ],

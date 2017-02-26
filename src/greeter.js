@@ -1,10 +1,12 @@
-module.exports = {
+const greeter = {
 	hello: function(name) {
 		let person = name || 'Jonh Doe'
-		console.log('Hello, ' + person)
+		return 'Hello, ' + person
 	},
-	bye: function(name) {
+	goodbye: function(name) {
 		let person = name || 'Jonh Doe'
-		console.log('Goodbye, ' + person)
+		return 'Goodbye, ' + person
 	}
 }
+
+module.exports = greeter
