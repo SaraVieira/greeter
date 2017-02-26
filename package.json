@@ -1,0 +1,31 @@
+{
+  "name": "greeter",
+  "version": "1.0.0",
+  "description": "A simple greeter module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "neutrino build --presets neutrino-preset-web",
+    "lint": "eslint src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraVieira/greeter.git"
+  },
+  "keywords": [
+    "greeter",
+    "node",
+    "javascript",
+    "scotch"
+  ],
+  "author": "Sara Vieira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaraVieira/greeter/issues"
+  },
+  "homepage": "https://github.com/SaraVieira/greeter#readme",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "neutrino": "^4.2.0",
+    "neutrino-preset-web": "^4.2.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "greeter",
+  "description": "A simple greeter module",
+  "main": "src/index.js",
+  "authors": [
+    "Sara Vieira"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "greeter",
+    "node",
+    "javascript",
+    "scotch"
+  ],
+  "homepage": "https://github.com/SaraVieira/greeter",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}
