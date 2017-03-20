@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v7.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/saravieira/Projects/greeter',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/saravieira/.npm/greeter/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/saravieira/.npm correctMkdir not in flight; initializing
+10 info lifecycle greeter@1.0.0~prepublish: greeter@1.0.0
+11 silly lifecycle greeter@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/saravieira/.npm/greeter/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/saravieira/Projects/greeter' ]
+13 verbose tarball /Users/saravieira/.npm/greeter/1.0.0/package.tgz
+14 verbose folder /Users/saravieira/Projects/greeter
+15 verbose addLocalTarball adding from inside cache /Users/saravieira/.npm/greeter/1.0.0/package.tgz
+16 verbose correctMkdir /Users/saravieira/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd greeter@1.0.0
+18 verbose afterAdd /Users/saravieira/.npm/greeter/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/saravieira/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/saravieira/.npm/greeter/1.0.0/package/package.json written
+21 silly publish { name: 'greeter',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'A simple greeter module',
+21 silly publish   main: 'src/greeter.js',
+21 silly publish   scripts:
+21 silly publish    { build: 'neutrino build --presets neutrino-preset-web',
+21 silly publish      test: 'eslint src/*.js && mocha' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/SaraVieira/greeter.git' },
+21 silly publish   keywords: [ 'greeter', 'node', 'javascript', 'scotch' ],
+21 silly publish   author: { name: 'Sara Vieira' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/SaraVieira/greeter/issues' },
+21 silly publish   homepage: 'https://github.com/SaraVieira/greeter#readme',
+21 silly publish   devDependencies:
+21 silly publish    { chai: '^3.5.0',
+21 silly publish      eslint: '^3.16.1',
+21 silly publish      mocha: '^3.2.0',
+21 silly publish      neutrino: '^4.2.0',
+21 silly publish      'neutrino-preset-web': '^4.2.1' },
+21 silly publish   readme: 'Greeter Module used in Scotch.io tutorial\n',
+21 silly publish   readmeFilename: 'README.MD',
+21 silly publish   gitHead: '996e09939972f8fa0120ed0ad4c4a3566cc7b8ab',
+21 silly publish   _id: 'greeter@1.0.0',
+21 silly publish   _shasum: '25b3334dcc31febad2e2d35ae9aba3e7d2c91e4e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name greeter
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'greeter',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'greeter',
+26 silly mapToRegistry   name: 'greeter',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/greeter
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/saravieira/.npm/greeter/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/greeter
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:06:50 PM
+33 verbose request id e28e43c373d3b6c5
+34 http request PUT https://registry.npmjs.org/greeter
+35 http 404 https://registry.npmjs.org/greeter
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '26',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Mon, 20 Mar 2017 22:06:51 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-mad9429-MAD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1490047610.739131,VS0,VE697' }
+37 verbose request invalidating /Users/saravieira/.npm/registry.npmjs.org/greeter on PUT
+38 error publish Failed PUT 404
+39 verbose stack Error: User not found : greeter
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+39 verbose stack     at emitTwo (events.js:106:13)
+39 verbose stack     at Request.emit (events.js:191:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+39 verbose stack     at emitOne (events.js:96:13)
+39 verbose stack     at Request.emit (events.js:188:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+40 verbose statusCode 404
+41 verbose pkgid greeter
+42 verbose cwd /Users/saravieira/Projects/greeter
+43 error Darwin 16.4.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v7.0.0
+46 error npm  v3.10.8
+47 error code E404
+48 error 404 User not found : greeter
+49 error 404
+50 error 404 'greeter' is not in the npm registry.
+51 error 404 You should bug the author to publish it (or use the name yourself!)
+52 error 404 Note that you can also install from a
+53 error 404 tarball, folder, http url, or git url.
+54 verbose exit [ 1, true ]
